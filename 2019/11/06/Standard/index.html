@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>开发规范 | Hexo</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="开发规范 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;about&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-06T06:21:40.643Z">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>John Doe</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="github" href="https://github.com/yelog" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/ff56736de7cf" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="oschina" href="https://my.oschina.net/yelog" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-oschina"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:1499641973@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=1499641973&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(6)</small></div></li>
+    
+        
+            
+            <li><div data-rel="笔记">笔记<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据库">数据库<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="6">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="笔记 "
+           href="/2019/11/06/biji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="重点总结">重点总结</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/11/06/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-11-06 13:14:08">2019/11/06</span>
+        </a>
+        
+        <a  class="数据库 "
+           href="/2019/11/06/vuex/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="vuex">vuex</span>
+            <span class="post-date" title="2019-11-06 14:46:23">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/Standard/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="开发规范">开发规范</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/frame/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="框架">框架</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/nodejs/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="js">js</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-Standard" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">开发规范</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a href="javascript:" target="_blank" data-rel="笔记 noopener">笔记</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-11-08 16:43:02'>2019-11-06 14:37</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1、基本原则"><span class="toc-text">1、基本原则:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2、HTML"><span class="toc-text">2、HTML:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3、CSS"><span class="toc-text">3、CSS:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4、js"><span class="toc-text">4、js:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5、-移动端优化"><span class="toc-text">5、 移动端优化:</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1、基本原则"><a href="#1、基本原则" class="headerlink" title="1、基本原则:"></a>1、基本原则:</h1><pre><code>1结构html,样式css,行为js:三者要分离,尽量确保文档和模板只包含HTML结构，样式都放到样式表里，行为都放到脚本里;
+2.縮进:统-缩进方式:整体tab/整体空格;
+3.文件编码:在HTML中指定编码&lt;meta charset= &quot;utf-8&quot;&gt;,无需使用@charset (CSS字符集指定样式表的编码) ;
+4.htm元素-律使用小写字母;
+5.外链资源:省略(图片及其它媒体资源) URL中的http / https协议，使URL成为相对地址，它协议(ftp 等)的URL不省略;
+6.统-注释:
+htm注释区分模块和区块内容;
+CSS注释组件块和子组件块以及声明块之间使用一空行分隔， 子组件块之间三空行分隔;
+js注释区分单行和多行注释和文件注释(用于告诉不熟悉这段代码的读者这个文件中包含哪些东西。应该提供文件的大体内容, 它的作者,依赖关系和兼容性信息) ;</code></pre><h1 id="2、HTML"><a href="#2、HTML" class="headerlink" title="2、HTML:"></a>2、HTML:</h1><pre><code>1.通用约定:
+1.1.标签:单标签无需闭合，双标签必须闭合;尽量减少标签数和复杂度;
+1.2.class和id: class应以功能或内容命名，不已表现形式命名;单词过长时，应注意书写格式; id作为选择器唯一表示符(钩子机制)，同时避免创建无样式信息的class;
+1.3.属性编写顺序: id&gt; class&gt; name&gt; data-x x x &gt;src/for/type/href&gt; title/alt&gt; aria-x x x/role;
+1.4.尽量使用双引号定义元素属性;
+1.5.元素嵌套:
+&lt;a&gt;元素不要嵌套&lt;a&gt;元素，也不要嵌套&lt;div&gt;元素;
+严格嵌套模式下: &lt;a&gt;元素不可以嵌套交互式元素, &lt;a&gt;/&lt;button&gt;/&lt;select&gt;等;
+&lt;p&gt;元素不可以嵌套块级元素，&lt;div&gt;/&lt;h1&gt;~ &lt;h6&gt;/&lt;p&gt;/&lt;ul&gt;/&lt;form&gt;等;
+1.6.布尔值属性: disabled. checked. selected 等属性不用设置值。&lt;input type=&quot;text&quot; disabled&gt;;
+2.标签语义化:没有CSS的HTML是一个语义系统而不是UI系统。此外语义化的HTML结构，有助于机器(搜索引擎)理解，另- -方面多人协作时，能迅速了解开发者意图;
+
+3.HEAD:
+3.1.文档类型-标准模式声明: &lt;!DOCTYPE html&gt;能够确保在每个浏览器中拥有一致的表现:
+3.2语言属性:中文-lang= &quot;zh-Hans&apos;.简体中文lang= *zh-cmn-Hans&quot; .繁体中文-lang=&apos;zh-cmn-Hant*. 英文-lang=&quot;en&quot;;
+3.3I兼容模式: emeta http equiv=&quot;X-UA-Compatible* content= &quot;IE= edge,chrome=1&quot;&gt; ;
+3.4.SEO优化:
+&lt;head&gt;
+&lt;meta charset- &apos;utf-8&quot; &gt;
+&lt;meta http-equiv= &quot;X-UA-Copatible&quot; cuntent=&quot;IE =edge,chrome=1&quot;&gt;
+&lt;meta name= &quot;keywords&quot; content= &quot;ycur keywords&apos;&gt;
+&lt;meta name= &quot;description&quot; content= your description&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot; author.email address&apos;&gt;
+&lt;tite&gt; Style Guide/title&gt;
+&lt;/head&gt;
+3.5.支持移动端设备优化，设置可见区域的完度和初始馆放比例。
+&lt;mcta name= &quot;vicwport&apos; content=&quot;width= device width, initial scalc=1.0&quot;&gt;
+3.6.iOS图标处理:
+apple-touch-icon图片 自动处理成园角和高光等效果
+apple-touch-con-precormposed禁止 系统自动添加效果，直接显示设计原图;</code></pre><h1 id="3、CSS"><a href="#3、CSS" class="headerlink" title="3、CSS:"></a>3、CSS:</h1><pre><code>1.通用约定:
+1.1.制定一致的注程规范: 组件块和子组件块以及声明块之间使用一空行分隔， 子组件块之间三空行分隔;
+1.2.classfnid: 使用语义化通用的命名方式;避免选择器嵌套层级过多:避免选择需和Class, ID 叠加使用:使用连字符- 作为ID、Class 名称界定符,不要驼峰命名法和下划钱;
+1.3相关属性声明顺序:定位Positining&gt;盒模型box model &gt;字体样式Tyographic &gt;视觉颇色样式Visual &gt;其它样式:
+1.4.ur10)引寻使用:属性选择符、属性值使用双引导;
+1.5媒体查询(Media query)的位置将媒体查询放在尽可能相关规则的附近。不要将他们打包放在一个单- 样式文件中或者放在 文档底部。如果你把他们分开了，将来只会被大家遗忘。
+1.6不要使用@import,与&lt;link-相比，@import 要慢很多，不增加额外的请求数，还会导致不可须料的问题。
+替代办法:通过Sass或Less类似的CSS预处理器将多个CSS文件编译为- -个文件: 其他CSS文件合并工具;链接的样式顺序: alink -&gt; avistted -&gt; a:hover -&gt; a:active (LOVeHAte)
+2.模块组织:
+21.组件Components:从Components的角度思考。将网站的模块都作为一个独立的Components.
+22组件命名Naming components : Components 最少以两个单词命名，通过-分离.点赞按钮(like button):
+23元素Elements: Elements 是C omponents中的元素:
+24元素命名Naming elements: Elements 的类名应尽可能仅有一个单词:
+25.多个单词On multiplc words :对于倘若需要两个或以上单词表达的Elcments类名，不应使用中划线和下划线连接，应直接连接，中划线比下划浅更容易输出;
+26避免标签选择器Avoid tag selectors:任何时候尽可能使用classnames.标签选择器在使用上没有问题,但是其性能上稍弱，并且表意不明确:
+27.layout (布同) 之避免定位属性Avoid positioning properties: Components应该在不同的上下文中都可以复用，所以应避免设置以下属性，Positioning (position, top, left, right, bottom), Floats (float, clear), Margins  (margin),Dimensions (width, height) *:
+2.8.layout (布局)之固定尺寸Fixed dimensions:头像和logos这些元素应该设置固定尺寸(宽度，高..) ;
+2.9.layout (布局)之在父元素中设置定位:倘若你需要为组件设置定位，应将在组件的上下文(父元素)中进行处理。
+2.10.ayout (布局)之避免过分嵌套Avoid over nesting:当出现多个嵌套的时候容易失去控制，应保持不超过一个嵌套。
+3.Less规范:
+3.1.代码按以下顺序组织: @import&gt; 》变量声明&gt; &gt;样式声明;
+3.2.@import语句文件引用: @import 语句引用的文需要写在-对引号内，.less 后缀不得省略。引号使用&apos;和。均可，但在同一项目内需统-。
+3.3. less -mixin (混入) : mixin方法:一 堆属性从一 个规则集到另一个规则集。
+less, sass这类Css预处理语言中的混合，可以理解成自定义了一段代码， 后面可以用@include调用，如设置一个有默认宽高的mixin (不带参数的类似)。
+//scss
+@mixin box-size(5width: 100px, $height:100px) {
+width: $width;height: Sheight;
+} /* 类似带参函数封装*/.demo{
+@include box-size;
+.demo2{
+@indlude box size(200px,300px);
+//编译之后/*css*/.demo{
+width: 100px;height: 100px
+.demo2{
+width: 200px;height: 300px;
+3.4.避免嵌套层级过多:将嵌套深度限制在2级。对于超过3级的嵌套,给予重新评估;
+3.5.字符串插值:变是可以用类似ruby和php的方式嵌入到字符串中，像@(name)这样的结构: @base-ur: t:t:assesfnord.com&quot;: background image: ur    (&quot; @{base ur)/images/bg.png);
+4.性能优化:
+4.1.值重选择高消耗的样式(高消耗属性在绘制前需要浏览器进行大量计算) :阴影box-shadows. 园角border. radius.透明度transparenc.过渡transforms.滤镜样式CSS fiteres.
+http://www.cnblogs.com/zhenmingliu/archive/2012/05/05/2484720.html filter 在CSS用的效果。
+4.2避免过分重排(当发生重排的时候，浏览器需要重新计算布局位置与大小) : 常见重排元素、width. height, padding. margin. dislay. border -width. position. top. left. right. bottom. font-sie. float.  text-align,overflow-y. font-weight. overflow. font-family, line-height. vertical-align. clear、 white-space. min-height.
+4.3.正确使用Display的属性(Display 属性会影响页面的渲染) : 
+display: inline后不应该再使用width. height, margin、padding 以及float; 
+display: inline-block后不应该再使用float; 
+display: block后不应该再使用  vertical-align; 
+display:table-*后不应该再使用margin或者float;
+4.4.不滥用 Float: Float在渲染时计算是比较大， 尽呈减少使用;
+4.5.多利用硬件能力， 如通过3D变形开启GPU加速: -般在Chrome中3D或透视变换(perspective transform) CSS属性和对opacity进行CSS动画会创建新的图层，在硬件加速渲染通道的优化下，GPU完成3D变形等操作后，将图层进行复合操作(Compesite Layers)，从而避免触发浏览器大面积重绘和重排。
+4.6.提升CSS选择器性能: 
+1. 避免使用通用选择器; 
+2. 避免使用标签或class选择器限制id选择器; 
+3.避免使用标签限制class选择器; 
+4. 避免使用多层标签选择器。使用class选择器替换，减少css直找; 
+5. 避免使用子选择器; 
+6.使用继承:</code></pre><h1 id="4、js"><a href="#4、js" class="headerlink" title="4、js:"></a>4、js:</h1><pre><code>1.通用约定:
+1.1.注释原则:尽显提高代码本身的清晰性、可读性(如无必要， 勿增注释);
+合理的注释、空行排版等，可以让代码更易阅读、更具美感如有必要，尽星详尽);
+1.2.函数/方法注释: 1必须包含函数说明，有参数和返回值时必须使用注释标识; 2 参数和返回值注释必须包含类型信息和说明: 3.当函数是内部函数,外部不可访问时，可以使用@inner标识;
+1.3.文件注释:文件注释用于告诉不熟悉这段代码的读者这个文件中包含哪些东西。应该提供文件的大体内容， 它的作者,依赖关系和兼容性信息。\
+1.4.命名之变量，函数及函数参数;骆驼式命名法(Camel-Case) ;三种编程命名规范 (匈牙利命名法(下划线)、驼峰式命名法 (小驼峰)、帕斯卡命名法 (大驼峰) ) , var loadingModules= 0;
+1.5.命名之私有属性、变量和方法:以下划线_ 开头， var. privatMethod= 0;
+1.6.命名之常量:使用全部字母大写，单词间下划线分隔的命名方式，var HTML ENTITY= f;
+1.7.命名之类:使用使用Pascal命名法(大驼峰)，function stringFormat(source) 0;
+1.8.类的方法/属性: Camel 命名法(小驼峰)，TextNode. prototype.clone = function 0 0;
+1.9. 枚举变量:使用Pascal命名法, var TargetState = { READING: 1,READED: 23;
+1.10.枚举的属性:使用全部字母大写，单词间下划线分隔的命名方式var TargetState = { READING: 1,READED: 2.1:
+1.11.命名语法:
+类名:使用名词，function Engine(options) 0;函数名:使用动宾短语，function getstylefelement) 0;布尔类型变量: is或has开头, var hasMoreCommands = false; Promise 对象:用动宾短语的进行时表达，var hasMoreCommands = false;
+1.12.接口命名规范:可读性强，见名知意;尽最不与5jquery已有的冲突;尽是写全，少用缩写除非是jquery社区提前约定好的;
+1.13.true和false布尔表达式:类型检测优先使用typeof。
+对象类型检测使用instanceof,
+null或undefined的检测使用== null,alsenllnd/int/*/; true=*0/D/0;
+1.14.不要在Array上使用for in循环: for in循环只用于object/map/hash的遍历，对Array用for. in循环有时会出错.因为它并不是从0到length - 1进行遍历,而是所有出现在对象及其原型链的键值。
+1.15.二元和三元操作符操作符始终写在前一行以免分号的隐式插入产生预想不到的问题。
+1.16.三元操作符用于替代if 条件判断语句。return val ? foo0 : bar0;
+1.17.&amp;和II :二元布尔操作符是可短路的，只有在必要时才会计算到最后一项。
+2.性能优化:
+2.1.避免不必要的DOM操作:浏览器遍历DOM元素的代价是昂贵的。最简单优化DOM树查询的方案是，当- -个元素出现多次时，将它保存在一个变量中， 就避免多次查询DOM树了。
+var myList = &quot;;
+var myListHTML = document.getElementByld(&quot; mylist&apos;&quot;.nnerHTML;for (vari=0;i&lt; 100;i++){
+myList += *&lt;span&gt;&apos;+ i + &quot;&lt;/span&gt; &quot;;}
+myListHTML = myList;
+2.2.缓存数组长度:循环无疑是和JavaScript性能非常相关的一部分。通过存储数组的长度，可以有效避免每次循环重新计算。
+var arr = new Array(1000)，len, i;
+for(i= 0, len = arr.length;i&lt; len;i++){};
+2.3.异步加载第三方内容:当你无法保证嵌入第三方内容比如Youtube视频或者-个 like/tweet按钮可以正常工作的时候，你需要考虑用异步加载这些代码，避免阻塞整个页面加载。(function0 {
+var script,
+scripts = document.getElementsByTagName&apos;script&apos;)[0];function load(ur) {
+script = document.createElement(&apos;script&apos;);script.async = true;script.src = urt;
+scripts.parentNode.insertBefore(script, scripts);
+}
+lad//apis.googlecom/js/plusone.js&quot;);load&apos;//platform.twitter.com/widgetsjs&quot;);load://s.widgetsite.com/widgetjs&quot;);
+2.4.避免使用jQuery实现动画:禁止使用slideUp/Down0 fadeln/fadeOut)等方法;尽量不使用animate0方法;</code></pre><h1 id="5、-移动端优化"><a href="#5、-移动端优化" class="headerlink" title="5、 移动端优化:"></a>5、 移动端优化:</h1><pre><code>1.lick 的300ms延迟响应: click 的300ms延迟是由双击缩放(double tap to zoom)所导致的，由于用户可以进行双击缩放或者双击滚动的操作，当用户一次点击屏幕之后, 浏览器并不能立刻判断用户是确实要打开这个链接，还是想要进行双击操作。因此移动端浏览器就等待300毫秒，以判断用户是否再次点击了屏幕。随着响应式网页逐渐增多，用户使用双击缩放机会减少，这300ms的延迟就更不可接受了。解决移动端浏览器300毫秒点击延迟问题所开发的一一个轻 量级的库FastClick就是很好的选择。FastClick在检测到touchend事件的时候，会通过DOM自定义事件立即触发一个模拟click事件，并把浏览器在300毫秒之后真正触发的click事件阻止掉。
+FastClick 的使用方法非常简单，在window load事件之后，在&lt;body&gt;上调用FastClick.attach0 即可。window.addEventListener( &quot;load&quot;, function0 {
+FastClickattach( document.body );}。false );
+2.快速回弹滚动:如果想要为某个元素拥有Native般的滚动效果,可以这样操作,
+overflow: auto; /* auto |scroll */-webkit-overflow-scrolling: touch;
+除了iScroll 之外,还有一个更加强大的滚动插件 Swiper (是免费且最现代的移动触摸滑块tp://idangero.us/swiper/#.VfaVk52qqko) , 支持3D和内置滚动条等。
+3.iQtJU:
+var LOC = WIN[&quot;location&quot;];var NA = WIN.navigator;
+var UA = NA.userAgent.toL owerCase(;function test(needle) l
+return needle.test(UA);)
+var IsTouch = &quot;ontouchend&quot; in WIN;
+var IsAndroid = test(/android]htc/) 1ll /linux/i.test(NA.platform + &quot;);var IslPad = !IlsAndroid &amp;&amp; test(/ipad/);
+var IslPhone = !sAndroid &amp;&amp; test(/ipodliphone/);var IsIOS = IsIPad l IslPhone;
+var IsWinPhone = test(/windows phone/);var IsWebapp = !!NA[&quot; standalone&quot;];
+var IsXiaoMi = IsAndroid &amp;&amp; test(/mis+/);var IsUC = test(/ucbrowser/);
+var IsWeixin = test(/micromessenger/);
+var IsBaiduBrowser = test(/baidubrowser/);var IsChrome = !!WIN[&quot;chrome&quot;];
+var IsBaiduBox = test(/baiduboxapp/);
+var IsPC = !IsAndroid &amp;&amp; !lslOS &amp;&amp; !lsWinPhone;var IsHTC = lsAndroid &amp;&amp; test(/htc&apos;s+/);var IsBaiduWallet = test(/baiduwallet/);
+
+
+4.获取滚动条值: PC 端滚动条的值是通过document.scrollTop和document.scrollLeft获得，但在ios中并没有滚动条的概念，所以仅能通过windows.scroll获取，同时也能兼容Android。
+window.scrollY;window.scrollx;
+5.清除输入框内阴影:在ios上,输入框默认有内部阴影，但无法使用box shadow来清除,如果不需要阴影，可以这样操作;
+input,textarea {
+border:0; /*方法1 */
+-webkit appearance: none; /*方法2 */
+6.Meta相关:页面窗口自动调整到设备宽度，并禁止用户缩放页面;
+&lt;meta name= &quot;viewport&quot; content=&quot;width=device-width, initial-scale= 1.0, minimum-scale= 1.0, maximum-scale= 1.0, user-scalable=no&quot; /&gt;7.电话号码识别:iOS Safari ( Android或其他浏览器不会)会自动识别看起来像电话号码的数字，将其处理为电话号码链接;
+&lt;!--关闭电话号码识别:
+&lt;meta name=&quot;format-detection&quot; content= &quot;telephone=no&quot; /&gt;&lt;!--开启电话功能: -&gt;
+&lt;a href= &quot;tel:123456&quot; &gt; 123456&lt;/a&gt;&lt;!--开启短信功能: -&gt;
+&lt;a href= &quot;sms:123456&quot;&gt; 123456&lt;/a&gt;
+8.邮箱地址识别:在Android (iOS不会) 上，浏览器会自动识别看起来像邮箱地址的字符串,不论有你没有加上邮箱链接，当你在这个字符串上长按，会弹出发邮件的提示。&lt;!--关闭邮箱地址识别: --&gt;
+&lt;meta name= &quot;format detection&quot; content= &quot;email=no&quot; /&gt;&lt;!--开启邮件发送: --&gt;
+&lt;a mailto:&gt; mobile@gmail.com&quot; &gt; mobile@gmail.com&lt;/a&gt;
+9.指定ios的safari顶端状态条的样式: &lt;meta name= &quot;apple- mobile-web- app-status -bar style&quot; content=&quot;default/black/black -translucent&quot; /&gt;</code></pre>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a href="javascript:void(0)" target="_blank" rel="noopener" class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>开发规范</p>
+    
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" target="_blank" rel="noopener" title="John Doe">John Doe</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-11-06, 14:37:08</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-08, 16:43:02</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/06/Standard/" title="开发规范">http://yoursite.com/2019/11/06/Standard/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Yelog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" href="javascript:void(0)" target="_blank" rel="noopener"></a>
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close" href="javascript:void(0)" target="_blank" rel="noopener" onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': [],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

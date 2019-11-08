@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>vuex | Hexo</title>
+  <title>重点总结 | Hexo</title>
   <meta name="keywords" content="">
-  <meta name="description" content="vuex | Hexo">
+  <meta name="description" content="重点总结 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -245,9 +245,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-vuex" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-biji" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">vuex</h1>
+        <h1 class="article-title">重点总结</h1>
     
     <div class="article-meta">
         
@@ -255,7 +255,7 @@
         
         <span class="book">
             
-                <a href="javascript:" target="_blank" data-rel="数据库 noopener">数据库</a>
+                <a href="javascript:" target="_blank" data-rel="笔记 noopener">笔记</a>
             
         </span>
         
@@ -263,7 +263,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-06 15:05:09'>2019-11-06 14:46</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-08 16:49:59'>2019-11-06 14:37</time>
         
     </div>
     <div class="article-meta">
@@ -285,7 +285,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue-fetch详解"><span class="toc-text">Vue-fetch详解</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue生命周期"><span class="toc-text">Vue生命周期</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#浅谈“Vue数据双流绑定”"><span class="toc-text">浅谈“Vue数据双流绑定”</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主要需要两个过程："><span class="toc-text">主要需要两个过程：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实现步骤："><span class="toc-text">实现步骤：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Watcher订阅者作为Observer和Compile之间通信的桥梁，主要做的事情是"><span class="toc-text">Watcher订阅者作为Observer和Compile之间通信的桥梁，主要做的事情是:</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -301,7 +301,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Vue-fetch详解"><a href="#Vue-fetch详解" class="headerlink" title="Vue-fetch详解"></a>Vue-fetch详解</h1><p>众所周知，传统ajax是最早出现得发送异步请求技术，其核心是使用XMLHttpRequest对象。但是它也存在一些令人头疼得问题：XNR是一个设计粗糙得API，不符合关注分离的原则；配置和调用方式非常混乱，而且基于事件得异步模型写起来也没有现代得Promise，generator/yield友好。而Fetch得出现就是为了解决XHR存在的问题</p>
+<p> Fetch 的核心在于对 HTTP 接口的抽象，包括 Request，Response，Headers，Body，以及用于初始化异步请求的 global fetch。其中，global fetch方法的语法定义：fetch(input[,init]);input:</p>
+<p>Fetch的优点：<br>语法简洁，更加语义化；<br>基于标准Promise实现，支持async/await；<br>同构方便，更加底层，提供的API丰富；脱离了XHR，是ES规范里新的实现方式</p>
+<p>缺点：<br>fetch只对网络请求报错，对400，500都当做成功的请求，服务器返回400，500错误代码时并不会reject；<br>fetch默认不会带cookie，需要添加配置项：credentials:’include’<br>fetch不支持abort，不支持超时控制，造成了流量的浪费<br>fetch没有办法原生监测请求的进度，而XHR可以<br>fetch的mode配置项有3个取值：<br>same-origin：该模式是不允许跨域的，它需要遵守同源策略；<br>cors: 该模式支持跨域请求，顾名思义它是以CORS的形式跨域；<br>no-cors: 该模式用于跨域请求但是服务器不带CORS响应头，也就是服务端不支持CORS；<br>目前，针对跨域请求，cors模式是常见的实现。</p>
+<h1 id="Vue生命周期"><a href="#Vue生命周期" class="headerlink" title="Vue生命周期"></a>Vue生命周期</h1><ol>
+<li><p>beforeCreate<br>在实例初始化之后，数据观测(data observer)和(event/watcher)事件配置之前被调用<br>说明：这个时候this还不能使用，data的数据、methods中的方法，以及watcher中的事件都不能获得</p>
+</li>
+<li><p>created<br>实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer),属性和方法的运算，(watch/event)事件回调。然而，挂载阶段还没开始，($el)属性目前不可见<br>说明：这个时候可以操作vue中的数据和方法，但是还不能对dom节点进行操作</p>
+</li>
+<li><p>beforeMount<br>在挂载开始之前被调用：相关的render函数首次被调用。<br>说明：($el)属性已存在，是虚拟dom，只是数据未挂载到模板中。</p>
+</li>
+<li><p>mounted<br>el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。<br>注意 mounted 不会承诺所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以用 vm.$nextTick替换掉 mounted<br>说明：挂载完毕，这时dom节点被渲染到文档内，dom操作在此时能正常进行</p>
+</li>
+<li><p>beforeUpdate<br>数据更新时调用，发生在虚拟 DOM 打补丁之前。这里适合在更新之前访问现有的 DOM，比如手动移除已添加的事件监听器。<br>说明：beforeUpdate是指view层的数据变化前，不是data中的数据改变前触发。因为Vue是数据驱动的。</p>
+</li>
+<li><p>updated<br>由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。<br>当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态。如果要相应状态改变，通常最好使用计算属性或 watcher取而代之。<br>说明：view层的数据更新后，data中的数据同beforeUpdate，都是更新完以后的。</p>
+</li>
+<li><p>beforeDestroy<br>实例销毁之前调用。在这一步，实例仍然完全可用</p>
+</li>
+<li><p>destroyed<br>Vue实例销毁后调用。调用后，Vue实例指示的所有东西都会解绑定，所有的事件监听器会被移出，所有的子实例也会被销毁<br>说明：执行destroy方法后，对data的改变不会再触发周期函数，此时的vue实例已经解除了事件监听以及和dom的绑定，但是dom结构依然存在</p>
+</li>
+</ol>
+<h1 id="浅谈“Vue数据双流绑定”"><a href="#浅谈“Vue数据双流绑定”" class="headerlink" title="浅谈“Vue数据双流绑定”"></a>浅谈“Vue数据双流绑定”</h1><p>Vue数据双向绑定是通过数据劫持结合发布者-订阅者模式的方式来实现的，其中比较关键的是数据劫持<br>简单来说：<br>双向绑定就是如果用户更新了view，data的数据也自动被更新了<br>输入框内容变化时，data中的数据同步变化。即view=&gt;model得变化。<br>Data中的数据变化时，文本节点得内容同步变化。即model=&gt;view的变化</p>
+<h2 id="主要需要两个过程："><a href="#主要需要两个过程：" class="headerlink" title="主要需要两个过程："></a>主要需要两个过程：</h2><p>1.视图变化更新数据<br>2.数据变化更新视图</p>
+<p>（1）视图变化更新数据 ：通过各种事件来监听数据的变化，比如改变表单input里面的数据通过对input的事件监听就能获取input更新后的数据。<br>（2）数据变化更新视图：要比前者复杂的多，通过对ES6的Object.defineProperty()的方法来监听vue中data对象属性值变化，通过set函数方法来改变data对象.<br>其实订阅者只是更新自己的指令对应的数据，各自管理自己的地方。每当属性的set方法触发，就循环更新Dep中的订阅者。</p>
+<h2 id="实现步骤："><a href="#实现步骤：" class="headerlink" title="实现步骤："></a>实现步骤：</h2><p>1.实现一个监听者Oberver来劫持并监听所有的属性，一旦有属性发生变化就通知订阅者<br>2.实现一个解析器compile，可以扫描和解析每个节点的相关指令，并根据初始化模板数据初始化相对应的订阅者<br>3.实现一个订阅者watcher来接受属性变化的通知并执行相应的方法，从而更新视图</p>
+<h2 id="Watcher订阅者作为Observer和Compile之间通信的桥梁，主要做的事情是"><a href="#Watcher订阅者作为Observer和Compile之间通信的桥梁，主要做的事情是" class="headerlink" title="Watcher订阅者作为Observer和Compile之间通信的桥梁，主要做的事情是:"></a>Watcher订阅者作为Observer和Compile之间通信的桥梁，主要做的事情是:</h2><p>1、在自身实例化时往属性订阅器(dep)里面添加自己<br>2、自身必须有一个update()方法<br>3、待属性变动dep.notice()通知时，能调用自身的update()方法，并触发Compile中绑定的回调，则功成身退</p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -314,12 +341,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>vuex</p>
+    <p><span class="copy-title">文章标题:</span>重点总结</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" target="_blank" rel="noopener" title="John Doe">John Doe</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-06, 14:46:23</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-06, 15:05:09</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/06/vuex/" title="vuex">http://yoursite.com/2019/11/06/vuex/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-06, 14:37:08</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-08, 16:49:59</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/06/biji/" title="重点总结">http://yoursite.com/2019/11/06/biji/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
