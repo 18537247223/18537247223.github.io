@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | 穿着校服拽天下</title>
+  <title>状态码 | 穿着校服拽天下</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Hello World | 穿着校服拽天下">
+  <meta name="description" content="状态码 | 穿着校服拽天下">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -333,19 +333,25 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-code" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">状态码</h1>
     
     <div class="article-meta">
         
         
+        
+        <span class="book">
+            
+                <a href="javascript:" target="_blank" data-rel="笔记 noopener">笔记</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-06 13:14:08'>2019-11-06 13:14</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-12 14:07:49'>2019-11-12 14:07</time>
         
     </div>
     <div class="article-meta">
@@ -367,7 +373,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -383,19 +389,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>状态码<br>字段名称为：code<br>200 OK [GET] 服务器成功返回用户请求的数据，该操作是幂等的（Idempotent）<br>201 CREATED [POST/PUT/PATCH] 用户新建或修改数据成功<br>202 ACCEPTED [<em>] 表示一个请求已经进入后台排队（异步任务）<br>204 NO CONTENT [DELETE] 用户删除数据成功<br>400 INVALID REQUEST [POST/PUT/PATCH] 用户发出的请求有错误，服务器没有进行新建或修改数据的操作，该操作是幂等的<br>401 UNAUTHORIZED [</em>] 表示用户没有权限（令牌、用户名、密码错误）<br>403 FORBIDDEN [<em>] 表示用户得到授权（与401错误相对），但是访问是被禁止的<br>404 NOT FOUND [</em>] 用户发出的请求针对的是不存在的记录，服务器没有进行操作，该操作是幂等的<br>406 NOT ACCEPTABLE [GET] 用户请求的格式不可得（比如用户请求JSON格式，但是只有XML格式）<br>410 GONE [GET] 用户请求的资源被永久删除，且不会再得到的<br>422 UNPROCESABLE ENTITY [POST/PUT/PATCH] 当创建一个对象时，发生一个验证错误<br>500 INTERNAL SERVER ERROR [*] 服务器发生错误，用户将无法判断发出的请求是否成功</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -409,12 +403,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World</p>
+    <p><span class="copy-title">文章标题:</span>状态码</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" target="_blank" rel="noopener" title="穿着校服拽天下">穿着校服拽天下</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-06, 13:14:08</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-06, 13:14:08</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/06/hello-world/" title="Hello World">http://yoursite.com/2019/11/06/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-12, 14:07:42</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-12, 14:07:49</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/12/code/" title="状态码">http://yoursite.com/2019/11/12/code/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
