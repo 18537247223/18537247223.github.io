@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>aAPI接口文档 | 穿着校服拽天下</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="aAPI接口文档 | 穿着校服拽天下">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;about&#x2F;index.html">
+<meta property="og:site_name" content="穿着校服拽天下">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-06T06:21:40.643Z">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>穿着校服拽天下</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="github" href="https://github.com/yelog" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/ff56736de7cf" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="oschina" href="https://my.oschina.net/yelog" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-oschina"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:1499641973@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=1499641973&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(11)</small></div></li>
+    
+        
+            
+            <li><div data-rel="笔记">笔记<small>(10)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="11">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class=""
+           href="/2019/11/06/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-11-06 13:14:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/nodejs/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="nodejs">nodejs</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/biji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="重点总结">重点总结</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/%E5%A4%8D%E4%B9%A0%E9%87%8D%E7%82%B9/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="复习重点">复习重点</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/%E9%9D%A2%E8%AF%95%E9%A2%98/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="重点要点">重点要点</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/JavaScript/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS笔记">JS笔记</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/cmd%E6%8F%92%E4%BB%B6.%E8%B7%AF%E5%BE%84/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="插件、路径">插件、路径</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/api/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="aAPI接口文档">aAPI接口文档</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/H5+CSS/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="H5+CSS">H5+CSS</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="开发规范">开发规范</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/%E6%A1%86%E6%9E%B6/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="框架">框架</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-api" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">aAPI接口文档</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a href="javascript:" target="_blank" data-rel="笔记 noopener">笔记</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-11-12 09:40:04'>2019-11-06 14:37</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#接口文档"><span class="toc-text">接口文档</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#管理后台"><span class="toc-text">管理后台</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#翔哥"><span class="toc-text">翔哥</span></a>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##李鹏</p>
+<h4 id="接口文档"><a href="#接口文档" class="headerlink" title="接口文档"></a>接口文档</h4><p>简化版的商城API接口:<a href="http://api.cat-shop.penkuoer.com" target="_blank" rel="noopener">http://api.cat-shop.penkuoer.com</a></p>
+<ul>
+<li>接口代理</li>
+</ul>
+<p>为第三方api接口调用提供代理服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v2/proxy</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">params</span><br><span class="line">  url   需要请求的api接口地址</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>文件上传</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/common/file_upload</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">params</span><br><span class="line">  file</span><br><span class="line"></span><br><span class="line">返回数据</span><br><span class="line">&#123;</span><br><span class="line">  &quot;code&quot;: &quot;success&quot;,</span><br><span class="line">  &quot;message&quot;: &quot;文件上传成功&quot;,</span><br><span class="line">  &quot;info&quot;: &quot;/uploads/20190221/1550738827910.jpeg&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>用户注册</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/auth/reg</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">params</span><br><span class="line">  userName    用户名</span><br><span class="line">  password    密码</span><br><span class="line">  nickName    昵称</span><br><span class="line">  avatar      头像</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;code&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;token&quot;: &quot;&quot;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>用户登录</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/auth/login</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">params</span><br><span class="line">  userName  用户名</span><br><span class="line">  password  密码</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;code&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;token&quot;: &quot;&quot;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取用户信息</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/users/info</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取商品信息</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/products</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">params</span><br><span class="line">  per   每一页显示的数量,默认10</span><br><span class="line">  page  当前页码,默认1</span><br><span class="line">  name  商品名字</span><br><span class="line">  product_category  分类id</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;totalCount&quot;: 14,   // 总记录数量</span><br><span class="line">    &quot;pages&quot;: 1,         // 当前页码</span><br><span class="line">    &quot;products&quot;: [...]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据id获取商品详情</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/products/:id</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>加入购物车</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/shop_carts</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">params</span><br><span class="line">  product   商品id</span><br><span class="line">  quantity  数量(默认值1)</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;code&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;message&quot;: &quot;加入购物车成功！&quot;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取用户购物车数据</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/shop_carts</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  []</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>删除购物车信息</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/shop_carts/:id</span><br><span class="line">method</span><br><span class="line">  delete</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>订单提交</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/orders</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">data</span><br><span class="line">  &#123;</span><br><span class="line">    receiver      收货人</span><br><span class="line">    regions       收货的省市区县</span><br><span class="line">    address       收货地址</span><br><span class="line">    orderDetails</span><br><span class="line">      [&#123;</span><br><span class="line">        quantity  数量</span><br><span class="line">        product   商品id</span><br><span class="line">        price     商品单价</span><br><span class="line">      &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    code: &apos;success&apos;,</span><br><span class="line">    message: &apos;订单保存成功&apos;,</span><br><span class="line">    info: &#123;</span><br><span class="line">      ...</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取订单列表</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/orders</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">params</span><br><span class="line">  per   每一页显示的数量,默认10</span><br><span class="line">  page  当前页码,默认1</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;totalCount&quot;: 14,   // 总记录数量</span><br><span class="line">    &quot;pages&quot;: 1,         // 当前页码</span><br><span class="line">    &quot;orders&quot;: [...]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据id获取订单详情</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/orders/:id</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>根据id删除详情</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/orders/:id</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">method</span><br><span class="line">  delete</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>收货地址列表</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/addresses</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">params</span><br><span class="line">  per   每一页显示的数量,默认10</span><br><span class="line">  page  当前页码,默认1</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;totalCount&quot;: 14,   // 总记录数量</span><br><span class="line">    &quot;pages&quot;: 1,         // 当前页码</span><br><span class="line">    &quot;addresses&quot;: [...]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取单条收货地址</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/addresses/:id</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    ... // 收货地址</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>收货地址新增</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/addresses</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">params</span><br><span class="line">&#123;</span><br><span class="line">  receiver    收货人姓名</span><br><span class="line">  mobile      手机号</span><br><span class="line">  regions     地区信息(河南省-郑州市-二七区)</span><br><span class="line">  address     详细地址(航海路1290号)</span><br><span class="line">  idDefault   是否默认(true/false)</span><br><span class="line">&#125;</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>收货地址修改</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/addresses/:id</span><br><span class="line">method</span><br><span class="line">  put</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">params</span><br><span class="line">&#123;</span><br><span class="line">  receiver    收货人姓名</span><br><span class="line">  mobile      手机号</span><br><span class="line">  regions     地区信息(河南省-郑州市-二七区)</span><br><span class="line">  address     详细地址(航海路1290号)</span><br><span class="line">  idDefault   是否默认(true/false)</span><br><span class="line">&#125;</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>收货地址删除</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/addresses/:id</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="管理后台"><a href="#管理后台" class="headerlink" title="管理后台"></a>管理后台</h4><ul>
+<li>用户管理</li>
+</ul>
+<p>管理后台登录</p>
+<blockquote>
+<p>管理后台默认登录账号密码为admin,此处管理员信息的管理功能暂未实现</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/auth/manager_login</span><br><span class="line">params</span><br><span class="line">  userName: admin</span><br><span class="line">  password: admin</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;code&quot;: &quot;success&quot;,</span><br><span class="line">    &quot;token&quot;: &quot;&quot;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>获取管理员信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/users/manager_info</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>获取用户列表</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/users</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">params</span><br><span class="line">  per       每一页显示的数量,默认10</span><br><span class="line">  page      当前页码,默认1</span><br><span class="line">  userName  用户名</span><br><span class="line">  nickName  昵称</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;totalCount&quot;: 14,   // 总记录数量</span><br><span class="line">    &quot;pages&quot;: 1,         // 当前页码</span><br><span class="line">    &quot;products&quot;: [...]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>新增用户</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/users</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">params</span><br><span class="line">  userName  用户名</span><br><span class="line">  password  密码</span><br><span class="line">  nickName  昵称</span><br><span class="line">  avatar    头像</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e953a224d199e15f12b9d&quot;,</span><br><span class="line">    &quot;userName&quot;: &quot;xiaoming&quot;,</span><br><span class="line">    &quot;password&quot;: &quot;asdjiy12h1j21787gzcb#134&quot;,</span><br><span class="line">    &quot;nickName&quot;: &quot;小明明&quot;,</span><br><span class="line">    &quot;avatar&quot;: &quot;http://l.asdllksad/asd&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>修改用户</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/users/5c6e953a224d199e15f12b9d</span><br><span class="line">method</span><br><span class="line">  put</span><br><span class="line">params</span><br><span class="line">  userName  用户名</span><br><span class="line">  nickName  昵称</span><br><span class="line">  avatar    头像</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e953a224d199e15f12b9d&quot;,</span><br><span class="line">    &quot;userName&quot;: &quot;xiaoming&quot;,</span><br><span class="line">    &quot;password&quot;: &quot;asdjiy12h1j21787gzcb#134&quot;,</span><br><span class="line">    &quot;nickName&quot;: &quot;小明明&quot;,</span><br><span class="line">    &quot;avatar&quot;: &quot;http://l.asdllksad/asd&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>删除用户信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/users/5c6e953a224d199e15f12b9d</span><br><span class="line">method</span><br><span class="line">  delete</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e953a224d199e15f12b9d&quot;,</span><br><span class="line">    &quot;userName&quot;: &quot;xiaoming&quot;,</span><br><span class="line">    &quot;password&quot;: &quot;asdjiy12h1j21787gzcb#134&quot;,</span><br><span class="line">    &quot;nickName&quot;: &quot;小明明&quot;,</span><br><span class="line">    &quot;avatar&quot;: &quot;http://l.asdllksad/asd&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>获取指定用户的信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/users/5c6e953a224d199e15f12b9d</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e953a224d199e15f12b9d&quot;,</span><br><span class="line">    &quot;userName&quot;: &quot;xiaoming&quot;,</span><br><span class="line">    &quot;password&quot;: &quot;asdjiy12h1j21787gzcb#134&quot;,</span><br><span class="line">    &quot;nickName&quot;: &quot;小明明&quot;,</span><br><span class="line">    &quot;avatar&quot;: &quot;http://l.asdllksad/asd&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>修改用户密码</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/users/reset_pwd/:id</span><br><span class="line">method</span><br><span class="line">  put</span><br><span class="line">params</span><br><span class="line">  password  密码</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e953a224d199e15f12b9d&quot;,</span><br><span class="line">    &quot;userName&quot;: &quot;xiaoming&quot;,</span><br><span class="line">    &quot;password&quot;: &quot;asdjiy12h1j21787gzcb#134&quot;,</span><br><span class="line">    &quot;nickName&quot;: &quot;小明明&quot;,</span><br><span class="line">    &quot;avatar&quot;: &quot;http://l.asdllksad/asd&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>获取用户收货地址</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/addresses/:user_id</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">params</span><br><span class="line">  per   每一页显示的数量,默认10</span><br><span class="line">  page  当前页码,默认1</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;totalCount&quot;: 14,   // 总记录数量</span><br><span class="line">    &quot;pages&quot;: 1,         // 当前页码</span><br><span class="line">    &quot;addresses&quot;: [...]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>商品管理</li>
+</ul>
+<ol>
+<li>获取商品列表</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/products</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">params</span><br><span class="line">  per   每一页显示的数量,默认10</span><br><span class="line">  page  当前页码,默认1</span><br><span class="line">  name  商品名字</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;totalCount&quot;: 14,   // 总记录数量</span><br><span class="line">    &quot;pages&quot;: 1,         // 当前页码</span><br><span class="line">    &quot;products&quot;: [...]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>新增商品信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/products</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">params</span><br><span class="line">  name          商品名字</span><br><span class="line">  descriptions  商品简介</span><br><span class="line">  quantity      数量(库存)</span><br><span class="line">  price         价格</span><br><span class="line">  coverImg      主图</span><br><span class="line">  productCategory 商品分类id</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;quantity&quot;: 89,</span><br><span class="line">    &quot;price&quot;: 6999,</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e953a224d199e15f12b9d&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;Apple iPhone X&quot;,</span><br><span class="line">    &quot;descriptions&quot;: &quot;Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机&quot;,</span><br><span class="line">    &quot;coverImg&quot;: &quot;https://img10.360buyimg.com/n7/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>修改商品信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/products/:id</span><br><span class="line">method</span><br><span class="line">  put</span><br><span class="line">params</span><br><span class="line">  name          商品名字</span><br><span class="line">  descriptions  商品简介</span><br><span class="line">  quantity      数量(库存)</span><br><span class="line">  price         价格</span><br><span class="line">  coverImg      主图</span><br><span class="line">  productCategory 商品分类id</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回商品信息</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;quantity&quot;: 89,</span><br><span class="line">    &quot;price&quot;: 6999,</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e953a224d199e15f12b9d&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;Apple iPhone X&quot;,</span><br><span class="line">    &quot;descriptions&quot;: &quot;Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机&quot;,</span><br><span class="line">    &quot;coverImg&quot;: &quot;https://img10.360buyimg.com/n7/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:10:34.346Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>删除商品信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/products/:id</span><br><span class="line">method</span><br><span class="line">  delete</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回商品信息</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;quantity&quot;: 191,</span><br><span class="line">    &quot;price&quot;: 6999.99,</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e965e224d199e15f12b9f&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;小米9&quot;,</span><br><span class="line">    &quot;descriptions&quot;: &quot;牛逼的小米9&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:15:26.669Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:15:26.669Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>根据ID获取商品信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/products/:id</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回商品信息</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;quantity&quot;: 191,</span><br><span class="line">    &quot;price&quot;: 6999.99,</span><br><span class="line">    &quot;_id&quot;: &quot;5c6e965e224d199e15f12b9f&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;小米9&quot;,</span><br><span class="line">    &quot;descriptions&quot;: &quot;牛逼的小米9&quot;,</span><br><span class="line">    &quot;createdAt&quot;: &quot;2019-02-21T12:15:26.669Z&quot;,</span><br><span class="line">    &quot;updatedAt&quot;: &quot;2019-02-21T12:15:26.669Z&quot;,</span><br><span class="line">    &quot;__v&quot;: 0</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>商品分类管理</li>
+</ul>
+<ol>
+<li>获取商品分类列表</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/product_categories</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">params</span><br><span class="line">  per   每一页显示的数量,默认10</span><br><span class="line">  page  当前页码,默认1</span><br><span class="line">  name  商品名字</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;totalCount&quot;: 14,   // 总记录数量</span><br><span class="line">    &quot;pages&quot;: 1,         // 当前页码</span><br><span class="line">    &quot;categories&quot;: [...]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>新增商品分类信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/product_categories</span><br><span class="line">method</span><br><span class="line">  post</span><br><span class="line">params</span><br><span class="line">  name          商品名字</span><br><span class="line">  descriptions  商品简介</span><br><span class="line">  coverImg      主图</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>修改商品信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/product_categories/:id</span><br><span class="line">method</span><br><span class="line">  put</span><br><span class="line">params</span><br><span class="line">  name          商品名字</span><br><span class="line">  descriptions  商品简介</span><br><span class="line">  coverImg      主图</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回商品分类信息</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>删除商品分类信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/product_categories/:id</span><br><span class="line">method</span><br><span class="line">  delete</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回商品分类信息</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>根据ID获取商品分类信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/product_categories/:id</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回商品分类信息</span><br><span class="line">  &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>订单管理</li>
+</ul>
+<ol>
+<li>获取订单列表</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/orders</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">params</span><br><span class="line">  per   每一页显示的数量,默认10</span><br><span class="line">  page  当前页码,默认1</span><br><span class="line">  no  订单号</span><br><span class="line">  user 用户id</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;totalCount&quot;: 14,   // 总记录数量</span><br><span class="line">    &quot;pages&quot;: 1,         // 当前页码</span><br><span class="line">    &quot;orders&quot;: [...]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改商品信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/orders/:id</span><br><span class="line">method</span><br><span class="line">  put</span><br><span class="line">params</span><br><span class="line">  isPayed          是否支付(true/false)</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回信息</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>删除商品分类信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/orders/:id</span><br><span class="line">method</span><br><span class="line">  delete</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回信息</span><br><span class="line">  &#123;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>根据ID获取商品分类信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">url</span><br><span class="line">  /api/v1/admin/orders/:id</span><br><span class="line">method</span><br><span class="line">  get</span><br><span class="line">headers</span><br><span class="line">  authorization Bearer token  // 需要提供jwt信息</span><br><span class="line">return</span><br><span class="line">  返回订单信息</span><br><span class="line">  &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+<h1 id="翔哥"><a href="#翔哥" class="headerlink" title="翔哥"></a>翔哥</h1><p>2019年9月7日13:37:04  17. 删除商品 接口   有改动，现在必选传入token ，token会在登陆时候返回<br>2019年7月22日20:13:49 部分接口有改动，使用时候请注意</p>
+<p>注册接口</p>
+<p>  接口地址：<a href="http://jx.xuzhixiang.top/ap/api/reg.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/reg.php</a><br>  接口请求方式：get<br>  接口参数：<br>       username用户名<br>       password密码<br>  使用方式<br>       <a href="http://jx.xuzhixiang.top/ap/api/reg.php?username=11&amp;password=1212" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/reg.php?username=11&amp;password=1212</a></p>
+<p>  服务器返回json数据<br>检测用户名是否存在 <a href="http://jx.xuzhixiang.top/ap/api/checkname.php?username=1" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/checkname.php?username=1</a></p>
+<p>登录接口</p>
+<p> 接口地址：<a href="http://jx.xuzhixiang.top/ap/api/login.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/login.php</a><br> 接口请求方式：get<br> 接口参数：<br>      username用户名<br>      password密码<br> 使用方式<br>      <a href="http://jx.xuzhixiang.top/ap/api/login.php?username=11&amp;password=1212" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/login.php?username=11&amp;password=1212</a></p>
+<p> 服务器返回json数据<br>首页商品列表接口</p>
+<p>   接口地址：<a href="http://jx.xuzhixiang.top/ap/api/productlist.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/productlist.php</a><br>  接口请求方式：get<br>  接口参数：<br>  无需参数（不登录也能看到商品列表）<br>   uid 可选参数，可以看到当前用户上传到服务器的商品<br>  使用方式<br>  <a href="http://jx.xuzhixiang.top/ap/api/productlist.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/productlist.php</a><br>  服务器返回json数据<br>根据商品id获取商品详情接口</p>
+<p> 接口地址：<a href="http://jx.xuzhixiang.top/ap/api/detail.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/detail.php</a><br>接口请求方式：get<br>接口参数：<br>id  商品的id<br>使用方式<br>获取id为1的商品的详情<br><a href="http://jx.xuzhixiang.top/ap/api/detail.php?id=1" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/detail.php?id=1</a><br>服务器返回json数据<br>查询用户购物车中的商品 接口</p>
+<p> 接口地址：<a href="http://jx.xuzhixiang.top/ap/api/cart-list.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/cart-list.php</a><br> 接口请求方式：get<br> 接口参数：<br>      id  用户id</p>
+<p> 使用方式<br>      获取id为1的用户的购物车<br>      <a href="http://jx.xuzhixiang.top/ap/api/cart-list.php?id=1" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/cart-list.php?id=1</a></p>
+<p> 服务器返回json数据<br>删除用户购物车中的商品 接口</p>
+<p> 接口地址：<a href="http://jx.xuzhixiang.top/ap/api/cart-delete.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/cart-delete.php</a><br> 接口请求方式：get<br> 接口参数：<br>      uid  用户id<br>      pid  商品id</p>
+<p> 使用方式<br>      删除用户1中的 id为1商品<br>      <a href="http://jx.xuzhixiang.top/ap/api/cart-delete.php?uid=1&amp;pid=1" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/cart-delete.php?uid=1&amp;pid=1</a></p>
+<p> 服务器返回json数据<br>给用户购物车中添加商品 接口</p>
+<pre><code>接口地址：http://jx.xuzhixiang.top/ap/api/add-product.php
+接口请求方式：get
+接口参数：
+     uid  用户id
+     pid  商品id
+     pnum  要添加的商品数量
+
+使用方式
+
+     http://jx.xuzhixiang.top/ap/api/add-product.php?uid=1&amp;pid=1&amp;pnum=1
+     服务器返回json数据</code></pre><p>更新购物车中商品数量 接口</p>
+<p>  接口地址：<a href="http://jx.xuzhixiang.top/ap/api/cart-update-num.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/cart-update-num.php</a><br>  接口请求方式：get<br>  接口参数：<br>       uid  用户id<br>       pid  商品id<br>       pnum  要添加的商品数量</p>
+<p>  使用方式</p>
+<pre><code>http://jx.xuzhixiang.top/ap/api/cart-update-num.php?uid=1&amp;pid=1&amp;pnum=1</code></pre><p>  服务器返回json数据<br>管理系统接口</p>
+<p>轮播图接口</p>
+<p>查询轮播图 接口</p>
+<p> 接口地址： <a href="http://jx.xuzhixiang.top/ap/api/bannerlist.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/bannerlist.php</a><br>      接口请求方式：get<br>      接口参数：<br>           uid  用户id（可选） ，如果传入uid 返回用户的轮播图，不传uid返回公共的轮播图</p>
+<pre><code>使用方式</code></pre><p> <a href="http://jx.xuzhixiang.top/ap/api/bannerlist.php?uid=227" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/bannerlist.php?uid=227</a></p>
+<pre><code>服务器返回json数据</code></pre> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">添加轮播图 接口</span><br><span class="line"></span><br><span class="line"> 接口地址：  http://jx.xuzhixiang.top/ap/api/add-banner.php</span><br><span class="line">      接口请求方式：get</span><br><span class="line">      接口参数：</span><br><span class="line"></span><br><span class="line">             bannerurl   （必选）添加轮播的地址</span><br><span class="line">           uid  用户id（可选） ，如果传入uid 返回用户的轮播图，不传uid返回公共的轮播图</span><br><span class="line"></span><br><span class="line">      使用方式</span><br><span class="line"></span><br><span class="line"> http://jx.xuzhixiang.top/ap/api/add-banner.php?bannerurl=https://img.alicdn.com/simba/img/TB1qW81wviSBuNkSnhJSuvDcpXa.jpg&amp;uid=227</span><br><span class="line"></span><br><span class="line">      服务器返回json数据</span><br><span class="line">删除轮播图 接口</span><br><span class="line"></span><br><span class="line"> 接口地址：   http://jx.xuzhixiang.top/ap/api/banner-delete.php</span><br><span class="line"> 接口请求方式：get</span><br><span class="line"> 接口参数：</span><br><span class="line"></span><br><span class="line">        banner_id（必选）轮播图的id</span><br><span class="line"></span><br><span class="line"> 使用方式</span><br><span class="line"> [](http://jx.xuzhixiang.top/ap/api/banner-delete.php?banner_id=2039</span><br><span class="line"></span><br><span class="line"> 服务器返回json数据)</span><br></pre></td></tr></table></figure>
+<p>商品列表接口</p>
+<p>所有商品接口<br>get<br>参数<br>pagesize  每页获取几个数据<br>pagenum 获取第几页数据<br>uid  用户id<br><a href="http://jx.xuzhixiang.top/ap/api/allproductlist.php?pagesize=20&amp;pagenum=4" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/allproductlist.php?pagesize=20&amp;pagenum=4</a><br>首页商品列表接口<br>接口地址：<a href="http://jx.xuzhixiang.top/ap/api/productlist.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/productlist.php</a><br>   接口请求方式：get<br>   接口参数：<br>        无需参数（不登录也能看到商品列表）<br>         uid 可选参数，可以看到当前用户上传到服务器的商品<br>   使用方式<br><a href="http://jx.xuzhixiang.top/ap/api/productlist.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/productlist.php</a><br>添加商品 接口<br>接口地址：  <a href="http://jx.xuzhixiang.top/ap/api/goods/goods-add.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/goods/goods-add.php</a><br>     接口请求方式：post<br>     接口参数：</p>
+<pre><code>1. </code></pre><p>pimg<br>    2.<br>pname<br>    3.<br>pprice<br>    4.<br>pdesc<br>    5.<br>uid  （可选）用户商品</p>
+<pre><code>使用方式  post 请求，参数在请求体
+
+
+服务器返回json数据</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">修改商品 接口</span><br><span class="line"></span><br><span class="line"> 接口地址：    http://jx.xuzhixiang.top/ap/api/goods/goods-update.php</span><br><span class="line">      接口请求方式：get</span><br><span class="line">      接口参数：</span><br><span class="line"></span><br><span class="line">             pid（必选）商品的id</span><br><span class="line"> pname（必选）商品</span><br><span class="line"> pprice（必选）商品</span><br><span class="line"> pdesc（必选）商品</span><br><span class="line"></span><br><span class="line">      使用方式</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> http://jx.xuzhixiang.top/ap/api/goods/goods-delete.php?pid=2459</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">      服务器返回json数据</span><br></pre></td></tr></table></figure>
+<p>删除商品 接口</p>
+<p> 接口地址：    <a href="http://jx.xuzhixiang.top/ap/api/goods/goods-delete.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/goods/goods-delete.php</a><br>      接口请求方式：get<br>      接口参数：</p>
+<pre><code>       pid（必选）商品的id
+       uid（必选）用户的id
+       token（必选）登陆时候返回的token
+
+使用方式</code></pre><p> <a href="http://jx.xuzhixiang.top/ap/api/goods/goods-delete.php?pid=2459" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/goods/goods-delete.php?pid=2459</a></p>
+<pre><code>服务器返回json数据</code></pre><p> ```<br>其余接口</p>
+<p>查询所有省份 <a href="http://jx.xuzhixiang.top/ap/api/all-province.php" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/all-province.php</a></p>
+<p>根据省id查询下面所有的市 <a href="http://jx.xuzhixiang.top/ap/api/all-city-of-province.php?provinceid=1" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/all-city-of-province.php?provinceid=1</a></p>
+<p>根据市id查询所有县（县级市） <a href="http://jx.xuzhixiang.top/ap/api/all-county-of-city.php?cityid=2" target="_blank" rel="noopener">http://jx.xuzhixiang.top/ap/api/all-county-of-city.php?cityid=2</a></p>
+<p>`</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a href="javascript:void(0)" target="_blank" rel="noopener" class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>aAPI接口文档</p>
+    
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" target="_blank" rel="noopener" title="穿着校服拽天下">穿着校服拽天下</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-11-06, 14:37:08</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-12, 09:40:04</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/06/api/" title="aAPI接口文档">http://yoursite.com/2019/11/06/api/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Yelog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" href="javascript:void(0)" target="_blank" rel="noopener"></a>
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close" href="javascript:void(0)" target="_blank" rel="noopener" onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': [],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
