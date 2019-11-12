@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>状态码 | 穿着校服拽天下</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="状态码 | 穿着校服拽天下">
+  <title>webpack搭建 | 穿着校服拽天下</title>
+  <meta name="keywords" content=" Vue ">
+  <meta name="description" content="webpack搭建 | 穿着校服拽天下">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -341,9 +341,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-code" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-webpack搭建环境" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">状态码</h1>
+        <h1 class="article-title">webpack搭建</h1>
     
     <div class="article-meta">
         
@@ -356,10 +356,16 @@
         </span>
         
         
+        <span class="tag">
+            
+            <a href="javascript:" target="_blank" rel="noopener" class="color4">Vue</a>
+            
+        </span>
+        
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-12 14:07:49'>2019-11-12 14:07</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-12 21:10:26'>2019-11-12 21:09</time>
         
     </div>
     <div class="article-meta">
@@ -381,7 +387,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#webpack搭建环境"><span class="toc-text">webpack搭建环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一步："><span class="toc-text">第一步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二步："><span class="toc-text">第二步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三步："><span class="toc-text">第三步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第四步："><span class="toc-text">第四步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第五步："><span class="toc-text">第五步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第六步："><span class="toc-text">第六步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第七步："><span class="toc-text">第七步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第八步："><span class="toc-text">第八步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第九步："><span class="toc-text">第九步：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第十步"><span class="toc-text">第十步</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -397,8 +403,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>状态码<br>字段名称为：code<br>200 OK [GET] 服务器成功返回用户请求的数据，该操作是幂等的（Idempotent）<br>201 CREATED [POST/PUT/PATCH] 用户新建或修改数据成功<br>202 ACCEPTED [<em>] 表示一个请求已经进入后台排队（异步任务）<br>204 NO CONTENT [DELETE] 用户删除数据成功<br>400 INVALID REQUEST [POST/PUT/PATCH] 用户发出的请求有错误，服务器没有进行新建或修改数据的操作，该操作是幂等的<br>401 UNAUTHORIZED [</em>] 表示用户没有权限（令牌、用户名、密码错误）<br>403 FORBIDDEN [<em>] 表示用户得到授权（与401错误相对），但是访问是被禁止的<br>404 NOT FOUND [</em>] 用户发出的请求针对的是不存在的记录，服务器没有进行操作，该操作是幂等的<br>406 NOT ACCEPTABLE [GET] 用户请求的格式不可得（比如用户请求JSON格式，但是只有XML格式）<br>410 GONE [GET] 用户请求的资源被永久删除，且不会再得到的<br>422 UNPROCESABLE ENTITY [POST/PUT/PATCH] 当创建一个对象时，发生一个验证错误<br>500 INTERNAL SERVER ERROR [*] 服务器发生错误，用户将无法判断发出的请求是否成功</p>
+        <h1 id="webpack搭建环境"><a href="#webpack搭建环境" class="headerlink" title="webpack搭建环境"></a>webpack搭建环境</h1><h2 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a>第一步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
 
+
+
+<h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i html-webpack-plugin webpack webpack-cli webpack-dev-server react react-dom css-loader style-loader --save-dev</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="第三步："><a href="#第三步：" class="headerlink" title="第三步："></a>第三步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">创建：index.html</span><br><span class="line"></span><br><span class="line">创建：webpack.config.js</span><br><span class="line"></span><br><span class="line">src文件</span><br><span class="line"> - main.js</span><br><span class="line"> - components文件</span><br><span class="line"> - views文件</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="第四步："><a href="#第四步：" class="headerlink" title="第四步："></a>第四步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">webpack.config.js中配置：</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</span><br><span class="line"><span class="keyword">var</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>);</span><br><span class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	mode: <span class="string">'production'</span>,</span><br><span class="line">	entry: <span class="string">'./src/main.js'</span>,</span><br><span class="line">	output: &#123;</span><br><span class="line">		path: path.resolve(__dirname, <span class="string">'dist'</span>),</span><br><span class="line">		filename: <span class="string">'[name].min.js'</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="built_in">module</span>: &#123;</span><br><span class="line">		rules: [&#123;</span><br><span class="line">				test: <span class="regexp">/\.css$/i</span>,</span><br><span class="line">				use: [<span class="string">'style-loader'</span>, <span class="string">'css-loader'</span>],</span><br><span class="line">			&#125;,</span><br><span class="line">			&#123;</span><br><span class="line">				test: <span class="regexp">/\.js$/</span>,</span><br><span class="line">				exclude: <span class="regexp">/(node_modules|bower_components)/</span>,</span><br><span class="line">				loader: <span class="string">'babel-loader'</span>,</span><br><span class="line">				query: &#123;</span><br><span class="line">					presets: [<span class="string">'es2015'</span>, <span class="string">'react'</span>]</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		],</span><br><span class="line">	&#125;,</span><br><span class="line">	devServer: &#123;</span><br><span class="line">		contentBase: path.join(__dirname, <span class="string">'dist'</span>),</span><br><span class="line">		compress: <span class="literal">true</span>,</span><br><span class="line">		port: <span class="number">9000</span></span><br><span class="line">	&#125;,</span><br><span class="line">	plugins: [</span><br><span class="line">		<span class="keyword">new</span> HtmlWebpackPlugin(&#123;</span><br><span class="line">			template: <span class="string">'./index.html'</span></span><br><span class="line">		&#125;),</span><br><span class="line">		<span class="keyword">new</span> webpack.HotModuleReplacementPlugin()</span><br><span class="line">	]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="第五步："><a href="#第五步：" class="headerlink" title="第五步："></a>第五步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-loader@<span class="number">7</span> babel-core babel-preset-es2015 babel-preset-react --save-dev</span><br></pre></td></tr></table></figure>
+
+<h2 id="第六步："><a href="#第六步：" class="headerlink" title="第六步："></a>第六步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">package.json中配置：</span><br><span class="line"><span class="string">"dev"</span>:<span class="string">"webpack-dev-server"</span>,</span><br><span class="line"><span class="string">"state"</span>:<span class="string">"npm run dev"</span>,</span><br><span class="line"><span class="string">"build"</span>:<span class="string">"webpack"</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="第七步："><a href="#第七步：" class="headerlink" title="第七步："></a>第七步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">main.js中配置：</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="title">expends</span> <span class="title">React</span>.<span class="title">Component</span></span>&#123;</span><br><span class="line">	render()&#123;</span><br><span class="line">		<span class="keyword">return</span>(</span><br><span class="line">			&lt;div&gt;test&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">		)</span></span><br><span class="line"><span class="regexp">	&#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">ReactDOM.render(&lt;App/</span>&gt;,<span class="built_in">document</span>.getElementById(<span class="string">'app'</span>))</span><br></pre></td></tr></table></figure>
+
+<h2 id="第八步："><a href="#第八步：" class="headerlink" title="第八步："></a>第八步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">运行成功</span><br><span class="line">npm run dev启动</span><br></pre></td></tr></table></figure>
+
+<h2 id="第九步："><a href="#第九步：" class="headerlink" title="第九步："></a>第九步：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">App.js中：</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> React,&#123;Component&#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">	render()&#123;</span><br><span class="line">		<span class="keyword">return</span>(</span><br><span class="line">			&lt;div&gt;Yo~<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">		)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main.js中：</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./views/App'</span></span><br><span class="line"></span><br><span class="line">^^运行-完美^^</span><br></pre></td></tr></table></figure>
+
+<h2 id="第十步"><a href="#第十步" class="headerlink" title="第十步"></a>第十步</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">在components中写内容：</span><br><span class="line">Home.js</span><br><span class="line"><span class="keyword">import</span> React,&#123;Component&#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">Home</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">	render()&#123;</span><br><span class="line">		<span class="keyword">return</span>(</span><br><span class="line">			&lt;div&gt;</span><br><span class="line">				&lt;h2&gt;Yo ~ Yo ~ <span class="xml"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">			&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">		)</span></span><br><span class="line"><span class="regexp">	&#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">在App.js中接过来</span></span><br><span class="line"><span class="regexp">import Home from '../</span>components/Home<span class="string">'</span></span><br><span class="line"><span class="string">render()&#123;</span></span><br><span class="line"><span class="string">		return(</span></span><br><span class="line"><span class="string">			&lt;div&gt;</span></span><br><span class="line"><span class="string">				&lt;div&gt;Yo~&lt;/div&gt;</span></span><br><span class="line"><span class="string">				&lt;Home/&gt;</span></span><br><span class="line"><span class="string">			&lt;/div&gt;</span></span><br><span class="line"><span class="string">		)</span></span><br><span class="line"><span class="string">	&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -411,12 +442,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>状态码</p>
+    <p><span class="copy-title">文章标题:</span>webpack搭建</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" target="_blank" rel="noopener" title="穿着校服拽天下">穿着校服拽天下</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-12, 14:07:42</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-12, 14:07:49</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/12/code/" title="状态码">http://yoursite.com/2019/11/12/code/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-12, 21:09:46</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-12, 21:10:26</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/12/webpack%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83/" title="webpack搭建">http://yoursite.com/2019/11/12/webpack%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
