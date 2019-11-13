@@ -117,11 +117,11 @@
 
 
 <ul>
-    <li><div class="all active">全部文章<small>(14)</small></div></li>
+    <li><div class="all active">全部文章<small>(20)</small></div></li>
     
         
             
-            <li><div data-rel="笔记">笔记<small>(13)</small></div>
+            <li><div data-rel="笔记">笔记<small>(19)</small></div>
                 
             </li>
             
@@ -137,7 +137,7 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="14">
+<input type="hidden" id="yelog_site_posts_number" value="20">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -215,6 +215,30 @@
         <a href="javascript:" target="_blank" rel="noopener" class="color5">code</a>
     </li>
     
+    <li class="article-tag-list-item">
+        <a href="javascript:" target="_blank" rel="noopener" class="color1">React</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" target="_blank" rel="noopener" class="color3">Webpack</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" target="_blank" rel="noopener" class="color1">Other</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" target="_blank" rel="noopener" class="color4">VUE</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" target="_blank" rel="noopener" class="color5">前端路由</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" target="_blank" rel="noopener" class="color1">JavaScript</a>
+    </li>
+    
     <div class="clearfix"></div>
 </div>
 
@@ -279,7 +303,7 @@
         
         <a  class="笔记 "
            href="/2019/11/06/JavaScript/"
-           data-tag="JS"
+           data-tag="JavaScript"
            data-author="" >
             <span class="post-title" title="JS笔记">JS笔记</span>
             <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
@@ -333,6 +357,54 @@
             <span class="post-date" title="2019-11-12 21:09:46">2019/11/12</span>
         </a>
         
+        <a  class="笔记 "
+           href="/2019/11/06/React/"
+           data-tag="React"
+           data-author="" >
+            <span class="post-title" title="React">React</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/Webpack/"
+           data-tag="Webpack"
+           data-author="" >
+            <span class="post-title" title="Webpack">Webpack</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/other/"
+           data-tag="Other"
+           data-author="" >
+            <span class="post-title" title="Other">Other</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/JS/"
+           data-tag="JS"
+           data-author="" >
+            <span class="post-title" title="JS">JS</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/Vue/"
+           data-tag="VUE"
+           data-author="" >
+            <span class="post-title" title="VUE">VUE</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
+        <a  class="笔记 "
+           href="/2019/11/06/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1/"
+           data-tag="前端路由"
+           data-author="" >
+            <span class="post-title" title="前端路由">前端路由</span>
+            <span class="post-date" title="2019-11-06 14:37:08">2019/11/06</span>
+        </a>
+        
     </nav>
 </div>
     </div>
@@ -369,7 +441,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-12 10:11:44'>2019-11-06 14:37</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-13 20:56:08'>2019-11-06 14:37</time>
         
     </div>
     <div class="article-meta">
@@ -844,481 +916,7 @@ fetch是基于promise设计的。fetch的代码结构比起ajax简单，参数�
 <pre><code>bind() 直接绑定在目标元素上
 live() 通过冒泡传播事件，默认document上，支持动态数据
 delegate() 更精确的小范围使用事件代理，性能优于 live
-on() 是最新的1.9版本整合了之前的三种方式的新事件绑定机制</code></pre><p>IE和DOM事件的区别</p>
-<pre><code>执行顺序不一样
-参数不一样
-时间加不加on
-This的指向问题</code></pre><p>阻止事件冒泡和阻止默认事件</p>
-<pre><code>//阻止事件冒泡
-if(typeof ev.stopPropagation==&apos;function&apos;) {  //标准的
-    ev.stopPropagation();
-} else { //非标准IE  
-    window.event.cancelBubble = true;
-}
-//阻止事件默认行为
-return false</code></pre><p>JavaScript是一门什么样的语言，他有什么特点</p>
-<pre><code>Js是是一门解释性语言
-Js主要向html界面添加交互行为
-Js可以写在html中，也可以写成单独的文件，这样更有利于结构性和行为性的分离
-Js可以运行在各个系统上，如（window,mac,linux,android,ios..）</code></pre><p>列举浏览器对象模型BOM里常用的至少4个对象，并列举window对象的常用方法至少5个 l</p>
-<pre><code>对象：window, document, location, screen, history, navigator
-方法：alert(), confirm(), prompt(), open(), close() </code></pre><p>本地存储和cookie 得区别</p>
-<pre><code>1. cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。
-
-2. cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下。存储大小限制也不同，cookie数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。
-
-3. 数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。
-
-4. 作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage 在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。Web Storage 支持事件通知机制，可以将数据更新的通知发送给监听者。Web Storage 的 api 接口使用更方便。
-
-1.Cookie数量和长度的限制。最多只能有20条cookie，cookie长度不能超过4KB，
-2.安全性问题。如果cookie被人拦截了，那人就可以取得所有的session信息。
-3.有些状态不可能保存在客户端。例如，为了防止重复提交表单，我们需要在服务器端保存一个计数器。如果我们把这个计数器保存在客户端，那么它起不到任何作用。</code></pre><p>js延时加载的方式有哪些</p>
-<pre><code>1. defer和async
-2. 动态创建DOM方式（创建script，插入到DOM中，加载完毕后callBack）
-3. 按需异步载入js</code></pre><p>哪些操作会造成内存泄漏/怎么解决</p>
-<pre><code>1. setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
-2. 闭包
-3. 控制台日志
-4. 循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）
-
-//解决
-1.将内部类取出来封装成一个单例，如果需要使用Context，就使用Application的Context。
-2.创建匿名内部类得静态对象</code></pre><p>javascript中的回收机制？</p>
-<pre><code>在Javascript中，如果一个对象不再被引用，那么这个对象就会被GC回收。如果两个对象互相引用，而不再  被第3者所引用，那么这两个互相引用的对象也会被回收。因为函数a被b引用，b又被a外的c引用，这就是为什么  函数a执行后不会被回收的原因。 </code></pre><p>什么是深拷贝和浅拷贝 理解 实现 怎么实现 e</p>
-<pre><code>深拷贝就是复制了对象得地址，两个对象用得一个地址，所以当一个值改变得时候另一个值也改变（assign()）
-浅拷贝只是把对象和值复制了过来，两个对象改变其中任意一个另一个不改变(jsonp()    json.stringify())</code></pre><p>防抖和节流</p>
-<pre><code>防抖可以把触发时间加长
-节流，就是连续触发事件但在n秒中只执行一次函数（使用时间戳和定时器实现）</code></pre><p>H5哪些新特性</p>
-<pre><code>页面加载技术，音乐加载技术，动画效果，可以是随意修改，可以自定义</code></pre><p>图片alt title区别</p>
-<pre><code>alt当图片加载不出来时显示得内容
-Title是当图片加载出来鼠标滑过时显示得内容</code></pre><p>项目跨域</p>
-<pre><code>一般由后端解决  后端权限开一下
-反向代理 负载均衡
-jsonp  代理服务器 
-可以创建动态得script标签，然后用src进行访问脚本 </code></pre><p>如何优化自己的代码</p>
-<pre><code>代码重用，避免全局变量
-拆分函数    注释</code></pre><p>1.JS</p>
-<p>面向对象、面向过程</p>
-<pre><code>面向对象：是把构成问题事务分解成各个对象，建立对象的目的不是为了完成一个步骤，而是为了描叙某个事物在整个解决问题的步骤中的行为，以功能来划分问题，而不是步骤
-
-面向过程：就是分析出解决问题所需要的步骤，然后用函数把这些步骤一步一步实现，使用的时候一个一个依次调用就可以了</code></pre><p>对象的创建－字面量，原型，构造函数等各自特点</p>
-<p>（你开发过什么什么插件）</p>
-<pre><code>字面量创建的方式使用constructor属性不会指向实例，而回指向Object
-
-构造函数：
-优点：在对象被创建时自动执行，函数名和类名相同，没有返回值和返回值类型，不能被显式调用
-
-原型模式：
-优点：共享
-缺点：是省略了构造函数传参初始化的过程，使初始化的值都是一样的</code></pre><p>继承 － 原型，原型链，es6继承 ，call，apply</p>
-<pre><code>原型：
-所有引用类型都有一个__proto__(隐式原型)属性，属性值是一个普通的对象
-所有函数都有一个prototype(原型)属性，属性值是一个普通的对象
-所有引用类型的__proto__属性指向它构造函数的prototype
-
-原型链：
-当访问一个对象的某个属性时，会先在这个对象本身的属性上查找，如果没有找到，则去它的__proto__隐式原型上查找，即它的构造函数的prototype，如果还没有找到就会再在构造函数的prototype的__proto__中查找，这样一层一层向上查找就会形成一个链式结构，我们称为原型链
-
-ES6继承：
-
-
-call:调用一个对象的一个方法，用另一个对象替换当前对象,可以传递多个参数
-apply:调用一个对象的一个方法，用另一个对象替换当前对象，最多只能由两个参数(this\argArray)</code></pre><p>闭包－是什么，什么情况会出现，项目中用它处理什么</p>
-<pre><code>闭包：
-闭包就是能够读取其他函数内部变量的函数
-
-出现：
-函数可以创建独立作用域
-自由变量跨域取值
-变量被函数引用时不会被释放
-
-处理：
-为了防止变量污染，但是用多了会内存泄漏
-
-什么地方用：
-闭包就是父函数给子函数传值，解决作用域问题。
-在es6出现之后一般使用let</code></pre><p>es6相对于es5新增技术，你常用哪些？</p>
-<pre><code>不一样的变量声明：const和let
-模板字符串
-箭头函数
-默认值
-Spread / Rest操作符
-二进制、八进制字面量
-对象和数组解构
-对象超类
-for..of和for..in
-ES6中的类</code></pre><p>promise怎么用的？用它做过什么功能？</p>
-<pre><code>new一个参数
-
-
-功能：
-避免回调地狱
-可以支持多个并发请求
-用promise解决异步问题</code></pre><p>ajax交互的底层原理，如何封装ajax；ajax，axis，fetch区别对比</p>
-<pre><code>原理：
-在用户和服务器之间添加了一个中间层(AJAX引擎)，使用户操作与服务器相应异步话，并不是所有的用户请求都提交给服务器
-
-ajax:是一种用来创建快速动态网页的技术
-
-Ajax 指的是 XMLHttpRequest
-
-axios:
-是基于promise用于浏览器和nodejs的HTTP客户端，本质上是对原生XHR的封装
-
-fetch:
-fetch是基于promise设计的。fetch的代码结构比起ajax简单，参数像jq ajax，但是fetch不是ajax的进一步封装，而是原生js，没有使用XMLHttpRequest对象
-
-封装ajax：
-function ajax(options){
-    var xhr = null;
-    var params = formsParams(options.data);
-    //创建对象
-    if(window.XMLHttpRequest){
-        xhr = new XMLHttpRequest()
-    } else {
-        xhr = new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);
-    }
-    // 连接
-    if(options.type == &quot;GET&quot;){
-        xhr.open(options.type,options.url + &quot;?&quot;+ params,options.async);
-        xhr.send(null)
-    } else if(options.type == &quot;POST&quot;){
-        xhr.open(options.type,options.url,options.async);
-        xhr.setRequestHeader(&quot;Content-Type&quot;,&quot;application/x-www-form-urlencoded&quot;);
-        xhr.send(params);
-    }
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState == 4 &amp;&amp; xhr.status == 200){
-            options.success(xhr.responseText);
-        }
-    }
-    function formsParams(data){
-        var arr = [];
-        for(var prop in data){
-            arr.push(prop + &quot;=&quot; + data[prop]);
-        }
-        return arr.join(&quot;&amp;&quot;);
-    }
-
-}
-
-ajax({
-    url : &quot;a.php&quot;,  // url----&gt;地址
-    type : &quot;POST&quot;,   // type ---&gt; 请求方式
-    async : true,   // async----&gt; 同步：false，异步：true 
-    data : {        //传入信息
-        name : &quot;张三&quot;,
-        age : 18
-    },
-    success : function(data){   //返回接受信息
-        console.log(data);
-    }
-})</code></pre><p>深拷贝，浅拷贝</p>
-<pre><code>深拷贝:
-就是复制了对象得地址，两个对象用得一个地址，所以当一个值改变得时候另一个值也改变（assign()）
-
-浅拷贝:
-只是把对象和值复制了过来，两个对象改变其中任意一个另一个不改变(jsonp()    json.stringify())</code></pre><p>常用数组方法，数组－字符串转换</p>
-<pre><code>方法：
-push\unpush   shift\unshift   pop   reverse   slice   splice   concat  json  indexOf  lastIndex
-
-转换：
-数组转字符串：
-var a,b;
-a = [0,1,2,3,4];
-b = a.json(&quot;-&quot;)
-
-字符串转数组：
-var str  &quot;aaa,bbb,ccc&quot;;
-strArr = str.split(&quot;,&quot;);
-var hello = &quot;helloworld&quot;;
-helloArr = hello.split(&apos;&apos;)</code></pre><p>字符串常见操作函数</p>
-<pre><code>charAt(索引值)
-indexof(返回索引位置)
-search(返回匹配位置)
-match(返回匹配的字符)
-replace(找到并替换相应的字符串)
-substring(indexA,indexB)(字符串截取准确的字符)
-slice(字符串截取，首末位置)
-substr(返回匹配的字符串)
-slipt(分隔符函数)
-toLowerCase(将所有字符串都转换为小写字母)
-toUpCase(将所有字符串都转换成大写字符)
-String(转换字符)</code></pre><p>前端路由</p>
-<p>hash模式</p>
-<pre><code>随着 ajax 的流行，异步数据请求交互运行在不刷新浏览器的情况下进行。而异步交互体验的更高级版本就是 SPA —— 单页应用。单页应用不仅仅是在页面交互是无刷新的，连页面跳转都是无刷新的，为了实现单页应用，所以就有了前端路由。
-类似于服务端路由，前端路由实现起来其实也很简单，就是匹配不同的 url 路径，进行解析，然后动态的渲染出区域 html 内容。但是这样存在一个问题，就是 url 每次变化的时候，都会造成页面的刷新。那解决问题的思路便是在改变 url 的情况下，保证页面的不刷新。在 2014 年之前，大家是通过 hash 来实现路由，url hash 就是类似于：
-http://www.xxx.com/#/login
-这种 #。后面 hash 值的变化，并不会导致浏览器向服务器发出请求，浏览器不发出请求，也就不会刷新页面。另外每次 hash 值的变化，还会触发hashchange 这个事件，通过这个事件我们就可以知道 hash 值发生了哪些变化。然后我们便可以监听hashchange来实现更新页面部分内容的操作：
-function matchAndUpdate(){
-    // todo 匹配 hash 做 dom 更新操作
-}
-window.addEventListener(&apos;hashchange&apos;, matchAndUpdate)</code></pre><p>history模式</p>
-<pre><code>14年后，因为HTML5标准发布。多了两个 API，pushState 和 replaceState，通过这两个 API 可以改变 url 地址且不会发送请求。同时还有 popstate 事件。通过这些就能用另一种方式来实现前端路由了，但原理都是跟 hash 实现相同的。用了 HTML5 的实现，单页路由的 url 就不会多出一个#，变得更加美观。但因为没有 # 号，所以当用户刷新页面之类的操作时，浏览器还是会给服务器发送请求。为了避免出现这种情况，所以这个实现需要服务器的支持，需要把所有路由都重定向到根页面</code></pre><p>当你调用setState的时候，发生了什么事？</p>
-<pre><code>当调用 setState 时，React会做的第一件事情是将传递给 setState 的对象合并到组件的当前状态。这将启动一个称为和解（reconciliation）的过程。和解（reconciliation）的最终目标是以最有效的方式，根据这个新的状态来更新UI。 为此，React将构建一个新的 React 元素树（您可以将其视为 UI 的对象表示）。
-一旦有了这个树，为了弄清 UI 如何响应新的状态而改变，React 会将这个新树与上一个元素树相比较（ diff ）。
-通过这样做， React 将会知道发生的确切变化，并且通过了解发生什么变化，只需在绝对必要的情况下进行更新即可最小化 UI 的占用空间。</code></pre><p>React 中的keys是什么，为什么它们很重要？</p>
-<pre><code>keys是什么帮助 React 跟踪哪些项目已更改、添加或从列表中删除。
-每个 keys 在兄弟元素之间是独一无二的。我们已经谈过几次关于和解（reconciliation）的过程，而且这个和解过程（reconciliation）中的一部分正在执行一个新的元素树与最前一个的差异。keys 使处理列表时更加高效，因为 React 可以使用子元素上的 keys 快速知道元素是新的还是在比较树时才被移动。
-而且 keys 不仅使这个过程更有效率，而且没有 keys ，React 不知道哪个本地状态对应于移动中的哪个项目。所以当你 map 的时候，不要忽略了 keys 。</code></pre><p>在哪个生命周期事件中你会发出 AJAX 请求，为什么？</p>
-<pre><code>AJAX 请求应该在 componentDidMount 生命周期事件中。 有几个原因:
-Fiber，是下一次实施React的和解算法，将有能力根据需要启动和停止渲染，以获得性能优势。其中一个取舍之一是 componentWillMount ，而在其他的生命周期事件中出发 AJAX 请求，将是具有 “非确定性的”。 这意味着 React 可以在需要时感觉到不同的时间开始调用 componentWillMount。这显然是AJAX请求的不好的方式。
--您不能保证在组件挂载之前，AJAX请求将无法 resolve。如果这样做，那意味着你会尝试在一个未挂载的组件上设置 StState，这不仅不会起作用，反而会对你大喊大叫。 在 componentDidMount 中执行 AJAX 将保证至少有一个要更新的组件</code></pre><p>您如何告诉React 构建（build）生产模式，该做什么？</p>
-<pre><code>通常，您将使用Webpack的 DefinePlugin 方法将 NODE_ENV 设置为 production。这将剥离像 propType 验证和额外的警告。除此之外，还有一个好主意，可以减少你的代码，因为React使用 Uglify 的 dead-code 来消除开发代码和注释，这将大大减少你的包的大小</code></pre><p>描述事件在React中的处理方式。</p>
-<pre><code>为了解决跨浏览器兼容性问题，您的 React 中的事件处理程序将传递 SyntheticEvent 的实例，它是 React 的浏览器本机事件的跨浏览器包装器。
-这些 SyntheticEvent 与您习惯的原生事件具有相同的接口，除了它们在所有浏览器中都兼容。有趣的是，React 实际上并没有将事件附加到子节点本身。React 将使用单个事件监听器监听顶层的所有事件。这对于性能是有好处的，这也意味着在更新DOM时，React 不需要担心跟踪事件监听器。</code></pre><p>createElement 和 cloneElement 有什么区别？</p>
-<pre><code>createElement 是 JSX 被转载到的，是 React 用来创建 React Elements 的内容(一些 UI 的对象表示)cloneElement用于克隆元素并传递新的 props</code></pre><p>可以选择性地传递给 setState 的第二个参数是什么，它的目的是什么？</p>
-<pre><code>一个回调函数，当setState结束并 re-rendered 该组件时将被调用。一些没有说出来的东西是 setState 是 异步 的，这就是为什么它需要一个第二个回调函数。通常最好使用另一个生命周期方法，而不是依赖这个回调函数，但是很高兴知道它存在。</code></pre><p>受控组件( controlled component )与不受控制的组件( uncontrolled component )有什么区别？</p>
-<pre><code>React 的很大一部分是这样的想法，即组件负责控制和管理自己的状态。
-当我们将 native HTML 表单元素（ input, select, textarea 等）投入到组合中时会发生什么？我们是否应该使用 React 作为“单一的真理来源”，就像我们习惯使用React一样？ 或者我们是否允许表单数据存在 DOM 中，就像我们习惯使用HTML表单元素一样？ 这两个问题是受控（controlled） VS 不受控制（uncontrolled）组件的核心。
-受控组件是React控制的组件，也是表单数据的唯一真理来源。</code></pre><p>简述微信小程序原理？</p>
-<pre><code>微信小程序采用JavaScript、WXML、WXSS三种技术进行开发，从技术讲和现有的前端开发差不多，但深入挖掘的话却又有所不同。
-
-JavaScript：首先JavaScript的代码是运行在微信App中的，并不是运行在浏览器中，因此一些H5技术的应用，需要微信App提供对应的API支持，而这限制住了H5技术的应用，且其不能称为严格的H5，可以称其为伪H5，同理，微信提供的独有的某些API，H5也不支持或支持的不是特别好。
-
-WXML：WXML微信自己基于XML语法开发的，因此开发时，只能使用微信提供的现有标签，HTML的标签是无法使用的。
-
-WXSS：WXSS具有CSS的大部分特性，但并不是所有的都支持，而且支持哪些，不支持哪些并没有详细的文档。
-
-微信的架构，是数据驱动的架构模式，它的UI和数据是分离的，所有的页面更新，都需要通过对数据的更改来实现。
-
-小程序分为两个部分webview和appService。其中webview主要用来展现UI，appService有来处理业务逻辑、数据及接口调用。它们在两个进程中运行，通过系统层JSBridge实现通信，实现UI的渲染、事件的处理</code></pre><p>小程序的双向绑定和vue哪里不一样</p>
-<pre><code>小程序直接this.data的属性是不可以同步到视图的，必须调用setData;vue是同步更新视图，自动渲染；</code></pre><p>小程序写自定义的组件，要考虑什么？</p>
-<pre><code>微信小程序的版本不能太低，否则整个界面会显示一片空白</code></pre><p>小程序跳转传递中文参数要注意什么？</p>
-<pre><code>如果不是底部菜单的页面，直接在url后加?params=111。
-但如果是底部菜单的跳转就不可以直接加在url后面，但可以使用wx.setStorageSync像HTML5本地存储或会话一样，先存起来。
-然后在另外一个页面wx.getStorageSync。最后用完了记得重置这个值为空</code></pre><p>React数据绑定</p>
-<pre><code>小程序直接this.data的属性是不可以同步到视图的，必须调用setData;vue是同步更新视图，自动渲染；</code></pre><p>VUE</p>
-<p>vue数据双向绑定底层原理。</p>
-<pre><code>Vue数据双向绑定是通过数据劫持结合发布者-订阅者模式的方式来实现的，其中比较关键的是数据劫持
-简单来说：
-双向绑定就是如果用户更新了view，data的数据也自动被更新了
-输入框内容变化时，data中的数据同步变化。即view=&gt;model得变化。
-Data中的数据变化时，文本节点得内容同步变化。即model=&gt;view的变化
-
-主要需要两个过程：
-1.视图变化更新数据
-2.数据变化更新视图
-
-（1）视图变化更新数据 ：通过各种事件来监听数据的变化，比如改变表单input里面的数据通过对input的事件监听就能获取input更新后的数据。
-（2）数据变化更新视图：要比前者复杂的多，通过对ES6的Object.defineProperty()的方法来监听vue中data对象属性值变化，通过set函数方法来改变data对象.
-其实订阅者只是更新自己的指令对应的数据，各自管理自己的地方。每当属性的set方法触发，就循环更新Dep中的订阅者。</code></pre><p>项目中你用到了那些vue技术（vue指令、自定义指令，过滤器、组件、动画、axios、路由、vuex，生命周期函数）－具体实现了什么功能</p>
-<pre><code>vue指令：
-v-model、v-text、v-html、v-bind、v-cloak、v-once、v-if、v-else、v-else-if、v-show、v-for、v-on、v-pre
-自定义指令：
-
-过滤器：用过滤器filters来渲染数据
-组件：就是像vant、Element这些东西
-动画：
-transition
-v-enter:进入过渡开始时得状态
-v-enter-active:进入过渡生效时得状态
-v-enter-to:进入过渡的结束状态
-v-leave:离开过渡的开始状态
-v-leave-action:离开过渡生效时的状态
-v-leave-to离开过渡的结束状态
-
-路由：Vue-router
-
-vuex:状态管理应用
-state，驱动应用的数据源
-view，以声明方式将 state 映射到视图
-actions，响应在 view 上的用户输入导致的状态变化
-getter，接受state作为其第一个参数
-mutation，是更改store的状态的唯一方法
-module，是vuex允许我们将store分割成模块
-
-生命周期钩子函数：
-beforeCreate:加入loading,是在发送数据请求多的时候用
-created,实例创建完成后结束loading事件
-beforeMount,挂载初始之前，完成 el 初始化，render 被初次调用，也可以发送数据
-mounted:完成挂载，获取DOM元素
-updated:渲染界面
-axtivated：keep-alive组件激活时调用
-deactivated:组件停用时调用
-beforeDestroy：实例销毁之前调用
-destroyed：实例销毁后调有。调用后，所有的事件监听器会被移动，子实例也会被销毁
-errorCaptured：修改组件状态</code></pre><p>axios的底层原理是什么？ vue项目中用axios出现跨域问题怎么处理的？跟ajax的区别是什么？</p>
-<pre><code>原理：
-基于Promise对Ajax原理 进行简单封装 
-从浏览器中创建 XMLHttpRequests
-从 node.js 创建 http 请求
-支持 Promise API
-拦截请求和响应
-转换请求数据和响应数据
-取消请求
-自动转换 JSON 数据
-客户端支持防御 XSR</code></pre><p>vue中做什么功能用到了组件件传旨？传旨方式有哪些？怎么实现的？</p>
-<p>vue路由  路由传参数有哪些方法？项目中传递什么数据用哪种传参？</p>
-<p>嵌套路由怎么动态接受参数？用什么方法？（watch）</p>
-<p>编程式路由怎么做？怎么传餐？</p>
-<p>路由用什么模式？hash跟history区别，怎么转换？</p>
-<p>路由拦截在项目中做什么功能的时候用到了？怎么用的？</p>
-<p>命名路由的好处是什么？</p>
-<p>vuex怎么用的项目中（state，actions，mutations，getters，module）分别在项目中负责做什么？</p>
-<p>vue性能优化，路由懒加载实现</p>
-<p>vue中做什么功能用到了组件件传旨？传旨方式有哪些？怎么实现的？</p>
-<p>React</p>
-<p>react数据绑定底层原理？</p>
-<p>高内聚低耦合</p>
-<pre><code>高内聚指的是单个的组件专注的自己唯一的功能
-低耦合指的是组件跟组件之间的耦合度很低，耦合度就是关联度</code></pre><p>项目中你用到了那些react技术（组件、组件传旨，动画、路由、生命周期、redux／flux／react-redux）－具体实现了什么功能</p>
-<p>组件划分，受控，非受控，有状态无状态等</p>
-<p>react生命周期函数在项目中做什么功能？</p>
-<p>diff算法的好处</p>
-<p>组件传旨怎么做？</p>
-<p>react路由嵌套路由传参怎么做？怎么动态接受？</p>
-<p>路由用什么模式？hash跟history区别，怎么转换？</p>
-<p>状态管理器怎么用的？</p>
-<p>redux（view，action，store，reducer）分别干什么的？</p>
-<p>reducer拆分怎么做？</p>
-<p>用过redux哪些异步插件？（thunk，saga，promise）</p>
-<p>Webpack</p>
-<p>webpack用过哪些插件，加载器？项目中用来做什么的？</p>
-<p>会不会自己配置webpack？具体包含哪些信息？</p>
-<p>Other</p>
-<p>项目中具体怎么用sass的？对比css好处在哪里。</p>
-<p>mock怎么用的？怎么模拟post请求？</p>
-<p>项目中的组件怎么测试的？（mocha）</p>
-<p>项目开发中遇到过哪些问题？怎么处理的？</p>
-<p>小程序开发中遇到的问题？</p>
-<p>1.JS</p>
-<p>面向对象、面向过程</p>
-<pre><code>面向对象：万物皆对象Object，通过对象去调用属性和方法
-面向过程：把方法的参数按照一定的顺序执行完这些方法</code></pre><p>对象的创建－字面量，原型，构造函数等各自特点</p>
-<p>（你开发过什么什么插件）</p>
-<pre><code>字面量创建的方式使用constructor属性不会指向实例，而回指向Object
-
-构造函数：
-优点：在对象被创建时自动执行，函数名和类名相同，没有返回值和返回值类型，不能被显式调用
-
-原型模式：
-优点：共享
-缺点：是省略了构造函数传参初始化的过程，使初始化的值都是一样的</code></pre><p>继承 － 原型，原型链，es6继承 ，call，apply</p>
-<pre><code>原型：
-所有引用类型都有一个__proto__(隐式原型)属性，属性值是一个普通的对象
-所有函数都有一个prototype(原型)属性，属性值是一个普通的对象
-所有引用类型的__proto__属性指向它构造函数的prototype
-
-原型链：
-当访问一个对象的某个属性时，会先在这个对象本身属性上查找，如果没有找到，则会去它的__proto__隐式原型上查找，即它的构造函数的prototype，如果还没有找到就会再在构造函数的prototype的__proto__中查找，这样一层一层向上查找就会形成一个链式结构，我们称为原型链
-
-ES6继承：
-
-
-call:调用一个对象的一个方法，用另一个对象替换当前对象,可以传递多个参数
-apply:调用一个对象的一个方法，用另一个对象替换当前对象，最多只能由两个参数(this\argArray)</code></pre><p>闭包－是什么，什么情况会出现，项目中用它处理什么</p>
-<pre><code>闭包：
-即通过函数嵌套函数，内部函数引用局部变量实现变量不释放。广泛来讲，所有函数访问另一个函数内部变量的过程都可以称之为闭包
-
-出现：
-函数可以创建独立作用域
-自由变量跨作用域取值
-变量被函数引用时不会被释放
-
-处理：
-为了防止变量污染，但是用多了会内存泄漏
-
-什么地方用：
-闭包就是父函数给子函数传值，解决作用域问题。
-在es6出现之后一般使用let</code></pre><p>es6相对于es5新增技术，你常用哪些？</p>
-<pre><code>不一样的变量声明：const和let
-模板字符串
-箭头函数
-默认值
-Spread / Rest操作符
-二进制、八进制字面量
-对象和数组解构
-对象超类
-for..of和for..in
-ES6中的类</code></pre><p>promise怎么用的？用它做过什么功能？</p>
-<pre><code>new一个参数
-
-
-功能：
-避免回调地狱
-可以支持多个并发请求
-用promise解决异步问题</code></pre><p>ajax交互的底层原理，如何封装ajax；ajax，axis，fetch区别对比</p>
-<pre><code>原理：
-在用户和服务器之间添加了一个中间层(AJAX引擎)，使用户操作与服务器相应异步话，并不是所有的用户请求都提交给服务器
-
-ajax:是一种用来创建快速动态网页的技术
-
-Ajax 指的是 XMLHttpRequest
-
-axios:
-是基于promise用于浏览器和nodejs的HTTP客户端，本质上是对原生XHR的封装
-
-fetch:
-fetch是基于promise设计的。fetch的代码结构比起ajax简单，参数像jq ajax，但是fetch不是ajax的进一步封装，而是原生js，
-没有使用XMLHttpRequest对象
-
-封装ajax：
-function ajax(options){
-    var xhr = null;
-    var params = formsParams(options.data);
-    //创建对象
-    if(window.XMLHttpRequest){
-        xhr = new XMLHttpRequest()
-    } else {
-        xhr = new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);
-    }
-    // 连接
-    if(options.type == &quot;GET&quot;){
-        xhr.open(options.type,options.url + &quot;?&quot;+ params,options.async);
-        xhr.send(null)
-    } else if(options.type == &quot;POST&quot;){
-        xhr.open(options.type,options.url,options.async);
-        xhr.setRequestHeader(&quot;Content-Type&quot;,&quot;application/x-www-form-urlencoded&quot;);
-        xhr.send(params);
-    }
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState == 4 &amp;&amp; xhr.status == 200){
-            options.success(xhr.responseText);
-        }
-    }
-    function formsParams(data){
-        var arr = [];
-        for(var prop in data){
-            arr.push(prop + &quot;=&quot; + data[prop]);
-        }
-        return arr.join(&quot;&amp;&quot;);
-    }
-
-}
-
-ajax({
-    url : &quot;a.php&quot;,  // url----&gt;地址
-    type : &quot;POST&quot;,   // type ---&gt; 请求方式
-    async : true,   // async----&gt; 同步：false，异步：true 
-    data : {        //传入信息
-        name : &quot;张三&quot;,
-        age : 18
-    },
-    success : function(data){   //返回接受信息
-        console.log(data);
-    }
-})</code></pre><p>深拷贝，浅拷贝</p>
-<pre><code>深拷贝:
-就是复制了对象得地址，两个对象用得一个地址，所以当一个值改变得时候另一个值也改变（assign()）
-
-浅拷贝:
-只是把对象和值复制了过来，两个对象改变其中任意一个另一个不改变(jsonp()    json.stringify())</code></pre><p>常用数组方法，数组－字符串转换</p>
-<pre><code>方法：
-push\unpush   shift\unshift   pop   reverse   slice   splice   concat  json  indexOf  lastIndex
-
-转换：
-数组转字符串：
-var a,b;
-a = [0,1,2,3,4];
-b = a.json(&quot;-&quot;)
-
-字符串转数组：
-var str  &quot;aaa,bbb,ccc&quot;;
-strArr = str.split(&quot;,&quot;);
-var hello = &quot;helloworld&quot;;
-helloArr = hello.split(&apos;&apos;)</code></pre>
+on() 是最新的1.9版本整合了之前的三种方式的新事件绑定机制</code></pre>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1499641973@qq.com </span>
     </div>
@@ -1335,7 +933,7 @@ helloArr = hello.split(&apos;&apos;)</code></pre>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" target="_blank" rel="noopener" title="穿着校服拽天下">穿着校服拽天下</a></p>
     <p><span class="copy-title">发布时间:</span>2019-11-06, 14:37:08</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-12, 10:11:44</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-13, 20:56:08</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/06/%E9%9D%A2%E8%AF%95%E9%A2%98/" title="重点要点">http://yoursite.com/2019/11/06/%E9%9D%A2%E8%AF%95%E9%A2%98/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -1397,7 +995,7 @@ helloArr = hello.split(&apos;&apos;)</code></pre>
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#H5+CSS','#git','#API','#规范','#框架','#面试','#JS','#Vue','#ajax','#Js','#code',],
+            'data': ['#H5+CSS','#git','#API','#规范','#框架','#面试','#JS','#Vue','#ajax','#Js','#code','#React','#Webpack','#Other','#VUE','#前端路由','#JavaScript',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
